@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Entity1 Create</title>
+    <title>location Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">

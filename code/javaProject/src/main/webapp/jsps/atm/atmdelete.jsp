@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity1</title>
+    <title>Delete atm</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
