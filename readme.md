@@ -32,4 +32,22 @@ We are interested in designing a database system for nonprofit hunger organizati
 ![Alt text](/documentation/CRUD_images/location/location_delete.png?raw=true)<br>
 ![Alt text](/documentation/CRUD_images/location/location_delete_output.png?raw=true)<br>
 
+## Warehouse:<br>
+![Alt text](/documentation/CRUD_images/warehouse/warehousemenu.png?raw=true)<br>
+![Alt text](/documentation/CRUD_images/warehouse/warehousecreate.png?raw=true)<br>
+![Alt text](/documentation/CRUD_images/warehouse/warehouseupdate.png?raw=true)<br>
+![Alt text](/documentation/CRUD_images/warehouse/warehouse_update_output.png?raw=true)<br>
+![Alt text](/documentation/CRUD_images/warehouse/warehouseread.png?raw=true)<br>
+![Alt text](/documentation/CRUD_images/warehouse/warehouse_read_output.png?raw=true)<br>
+![Alt text](/documentation/CRUD_images/warehouse/warehousedelete.png?raw=true)<br>
+![Alt text](/documentation/CRUD_images/warehouse/warehouse_delete_output.png?raw=true)<br>
 
+## Food:<br>
+![Alt text](/documentation/CRUD_images/food/foodmenu.png?raw=true)<br>
+![Alt text](/documentation/CRUD_images/food/foodcreate.png?raw=true)<br>
+![Alt text](/documentation/CRUD_images/food/foodupdate.png?raw=true)<br>
+![Alt text](/documentation/CRUD_images/food/food_update_output.png?raw=true)<br>
+![Alt text](/documentation/CRUD_images/food/foodread.png?raw=true)<br>
+![Alt text](/documentation/CRUD_images/food/food_read_output.png?raw=true)<br>
+![Alt text](/documentation/CRUD_images/food/fooddelete.png?raw=true)<br>
+![Alt text](/documentation/CRUD_images/food/food_delete_output.png?raw=true)<br>
