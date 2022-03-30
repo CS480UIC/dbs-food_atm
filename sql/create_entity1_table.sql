@@ -1,4 +1,4 @@
-CREATE TABLE user
+CREATE TABLE entity1 
 (
   
   username VARCHAR(50) primary key,
