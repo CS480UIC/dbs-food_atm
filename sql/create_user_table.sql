@@ -1,4 +1,4 @@
-CREATE TABLE users (
+CREATE TABLE user (
   user_id INT NOT NULL AUTO_INCREMENT,
   password VARCHAR(20) NOT NULL,
   user_type VARCHAR(20) NOT NULL,
