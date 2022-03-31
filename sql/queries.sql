@@ -28,3 +28,9 @@ group by user_type;
 
 
 # complex queries
+create view complex_0 as
+select location.address, warehouse.warehouse_id
+from location
+inner join warehouse
+on location.location_id = warehouse.warehouse_location
+
