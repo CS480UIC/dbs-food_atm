@@ -29,29 +29,29 @@ public class InitDao {
 	private String MySQL_user = "test";  //TODO change user
 	
 	/**
-	 * password of your username to connect to the database
+	 * password of your user_id to connect to the database
 	 */
 	private String MySQL_password = "12345678";  //TODO change password
 	
 	/**
-	 * get the Search result with Username 
+	 * get the Search result with user_id 
 	 */
-	public User findByUsername(String username) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+	public User findByuser_id(String user_id) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		User user = new User();
 		try {
 			
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/food_atm", MySQL_user, MySQL_password);
-		    String sql = "select * from user where username=?";
+		    String sql = "select * from user where user_id=?";
 		    PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setString(1,username);
+		    preparestatement.setString(1,user_id);
 		    ResultSet resultSet = preparestatement.executeQuery();
 		    while(resultSet.next()){
-		    	String user_name = resultSet.getString("username");
-		    	if(user_name.equals(username)){
-		    		user.setUsername(resultSet.getString("username"));
+		    	String user_name = resultSet.getString("user_id");
+		    	if(user_name.equals(user_id)){
+		    		user.setuser_id(resultSet.getString("user_id"));
 		    		user.setPassword(resultSet.getString("password"));
-		    		user.setEmail(resultSet.getString("email"));
+		    		user.setuser_type(resultSet.getString("user_type"));
 		    		
 		    	}
 		    }

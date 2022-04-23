@@ -12,12 +12,12 @@
 	<table border="1" width="70%" align="center">
 	<tr>
 		<th>name</th>
-		<th>email</th>
+		<th>user_type</th>
 	</tr>
 <c:forEach items="${UserList}" var="user">
 	<tr>
-		<td>${user.username}</td>
-		<td>${user.email}</td>
+		<td>${user.user_id}</td>
+		<td>${user.user_type}</td>
 	</tr>
 </c:forEach>
 </table>

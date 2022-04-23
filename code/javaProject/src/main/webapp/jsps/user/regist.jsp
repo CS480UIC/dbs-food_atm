@@ -26,14 +26,14 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/UserServletRegister'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	User    :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	User_id    :<input type="text" name="user_id" value="${form.user_id }"/>
+	<span style="color: red; font-weight: 900">${errors.user_id }</span>
 	<br/>
 	Password：<input type="password" name="password" value="${form.password }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	user_type	：<input type="text" name="user_type" value="${form.user_type }"/>
+	<span style="color: red; font-weight: 900">${errors.user_type }</span>
 	<br/>
 	<input type="submit" value="Register"/>
 </form>
