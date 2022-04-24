@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Entity1 Create</title>
+    <title>atm Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -22,7 +22,7 @@
   
   <body>
   <h1>atm Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+<form action="<c:url value='/atmServletCreate'/>" method="post">
 	atm_id    :<input type="integer" name="atm_id" value="${form.atm_id }"/>
 	<span style="color: red; font-weight: 900">${errors.atm_id }</span>
 	<br/>

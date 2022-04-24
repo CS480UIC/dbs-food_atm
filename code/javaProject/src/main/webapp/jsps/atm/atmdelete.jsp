@@ -22,9 +22,9 @@
   
   <body>
   <h1>Delete atm</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
-	<input type="hidden" name="method" value="search"/>
-	Delete atm   :<input type="integer" name="atm_id" value="${form.atm_id }"/>
+<form action="<c:url value='/atmServletDelete'/>" method="post">
+	<input type="hidden" name="method" value="delete"/>
+	Delete atm_id   :<input type="text" name="atm_id" value="${form.atm_id }"/>
 	<span style="color: red; font-weight: 900">${errors.atm_id }</span>
 	<br/>
 	<input type="submit" value="Delete atm"/>

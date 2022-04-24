@@ -45,9 +45,62 @@
     <servlet-class>entity1.web.servlet.Entity1ServletDelete</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Entity1ServletDelete</servlet-name>
+    <servlet-name>Entity1ServletDelete</servlet-name> 
     <url-pattern>/Entity1ServletDelete</url-pattern>
   </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>atmServletCreate</display-name>
+    <servlet-name>atmServletCreate</servlet-name>
+    <servlet-class>atm.web.servlet.atmServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>atmServletCreate</servlet-name>
+    <url-pattern>/atmServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>atmServletRead</display-name>
+    <servlet-name>atmServletRead</servlet-name>
+    <servlet-class>atm.web.servlet.atmServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>atmServletRead</servlet-name>
+    <url-pattern>/atmServletRead</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>atmServletUpdate</display-name>
+    <servlet-name>atmServletUpdate</servlet-name>
+    <servlet-class>atm.web.servlet.atmServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>atmServletUpdate</servlet-name>
+    <url-pattern>/atmServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <description></description>
+    <display-name>atmServletDelete</display-name>
+    <servlet-name>atmServletDelete</servlet-name>
+    <servlet-class>atm.web.servlet.atmServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>atmServletDelete</servlet-name> 
+    <url-pattern>/atmServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
   
   <servlet>
     <description></description>

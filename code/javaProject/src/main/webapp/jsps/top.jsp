@@ -44,8 +44,10 @@
 			Hello：${sessionScope.session_user.user_id };
 			<a href="<c:url value='/jsps/user/queries.jsp'/>" target="body">Query Result</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp; 
-			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD entity 1</a> |&nbsp;&nbsp;
-			<a href="<c:url value='/jsps/atm/menu.jsp'/>" target="body">CRUD entity 1</a> |
+			<a href="<c:url value='/jsps/atm/menu.jsp'/>" target="body">CRUD atm</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/food/menu.jsp'/>" target="body">CRUD food</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/location/menu.jsp'/>" target="body">CRUD location</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/warehouse/menu.jsp'/>" target="body">CRUD warehouse</a> |
 
 		</c:otherwise>
 	</c:choose>

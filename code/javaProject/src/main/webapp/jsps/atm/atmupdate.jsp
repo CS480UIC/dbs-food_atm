@@ -24,7 +24,7 @@
   <h1>Update</h1>
 <form action="<c:url value='/atmServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update atm_id   :<input type="text" name="username" value="${form.atm_id }"/>
+	Update atm_id   :<input type="text" name="atm_id" value="${form.atm_id }"/>
 	<span style="color: red; font-weight: 900">${errors.atm_id }</span>
 	<br/>
 	<input type="submit" value="Update atm"/>

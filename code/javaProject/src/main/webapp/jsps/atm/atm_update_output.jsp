@@ -28,15 +28,15 @@
     <br/>
     atm_location：<input type="integer" name="atm_location" value="${atm.atm_location }" disabled/>
     <br/>
-    atm_last_restocked ：<input type="datetime" name="email1" value="${atm.atm_last_restocked }" disabled/>
+    atm_last_restocked ：<input type="datetime" name="atm_last_restocked" value="${atm.atm_last_restocked }" disabled/>
     <br/>
-    associated_warehouse ：<input type="integer" name="email1" value="${atm.associated_warehouse }" disabled/>
+    associated_warehouse ：<input type="integer" name="associated_warehouse" value="${atm.associated_warehouse }" disabled/>
     <br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/atmServletUpdate'/>" method="post">
     <input type="hidden" name="method" value="update"/>
-    <input type="hidden" name="username" value="${atm.atm_id }"/>
+    <input type="hidden" name="atm_id" value="${atm.atm_id }"/>
     atm_location：<input type="integer" name="atm_location" value="${form.atm_location }"/>
     <span style="color: red; font-weight: 900">${errors.atm_location }</span>
     <br/>
