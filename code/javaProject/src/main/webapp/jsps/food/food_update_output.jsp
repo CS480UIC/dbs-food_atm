@@ -35,9 +35,9 @@
 	<br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/foodServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-		<input type="hidden" name="username" value="${food.food_id }"/>
+		<input type="hidden" name="food_id" value="${food.food_id }"/>
 	name：<input type="text" name="name" value="${form.name }"/>
 	<span style="color: red; font-weight: 900">${errors.name }</span>
 	<br/>

@@ -22,9 +22,9 @@
   
   <body>
   <h1>Delete food</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/foodServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete food   :<input type="text" name="username" value="${form.food_id }"/>
+	Delete food   :<input type="text" name="food_id" value="${form.food_id }"/>
 	<span style="color: red; font-weight: 900">${errors.food_id }</span>
 	<br/>
 	<input type="submit" value="Delete food"/>

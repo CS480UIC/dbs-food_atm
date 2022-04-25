@@ -23,17 +23,12 @@
   <body>
   <h1>Read food</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletRead'/>" method="post">
+<form action="<c:url value='/foodServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
 	food_id    :<input type="text" name="food_id" value="${form.food_id }"/>
 	<span style="color: red; font-weight: 900">${errors.food_id }</span>
 	<br/>
-<%-- 	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
-	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/> --%>
+
 	<input type="submit" value="Read food"/>
 </form>
   </body>

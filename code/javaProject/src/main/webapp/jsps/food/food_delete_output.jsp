@@ -23,9 +23,9 @@
   <body>
   <h1>Delete Entity</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/foodServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${food.food_id }"/>
+		<input type="hidden" name="food_id" value="${food.food_id }"/>
 	food_id : <input type="text" name="food_id" value="${food.food_id }" disabled/>
 	<br/>
 	

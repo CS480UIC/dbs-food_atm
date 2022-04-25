@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Entity1 Create</title>
+    <title>food Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -22,7 +22,7 @@
   
   <body>
   <h1>food Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+<form action="<c:url value='/foodServletCreate'/>" method="post">
 	food_id    :<input type="integer" name="food_id" value="${form.food_id }"/>
 	<span style="color: red; font-weight: 900">${errors.food_id }</span>
 	<br/>

@@ -100,6 +100,52 @@
   
   
   
+  <servlet>
+    <description></description>
+    <display-name>foodServletCreate</display-name>
+    <servlet-name>foodServletCreate</servlet-name>
+    <servlet-class>food.web.servlet.foodServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>foodServletCreate</servlet-name>
+    <url-pattern>/foodServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>foodServletRead</display-name>
+    <servlet-name>foodServletRead</servlet-name>
+    <servlet-class>food.web.servlet.foodServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>foodServletRead</servlet-name>
+    <url-pattern>/foodServletRead</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>foodServletUpdate</display-name>
+    <servlet-name>foodServletUpdate</servlet-name>
+    <servlet-class>food.web.servlet.foodServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>foodServletUpdate</servlet-name>
+    <url-pattern>/foodServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <description></description>
+    <display-name>foodServletDelete</display-name>
+    <servlet-name>foodServletDelete</servlet-name>
+    <servlet-class>food.web.servlet.foodServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>foodServletDelete</servlet-name> 
+    <url-pattern>/foodServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  
   
   
   <servlet>
