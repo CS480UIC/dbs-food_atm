@@ -18,8 +18,9 @@ create view aggregate_1 as
 SELECT user_type, sum(balance) FROM user GROUP BY user_type;
 
 create view aggregate_2 as
-select warehouse_last_restocked, COUNT(DISTINCT warehouse_last_restocked)
-from warehouse;
+select warehouse_last_restocked, COUNT(warehouse_id) 
+from warehouse 
+group by warehouse_last_restocked
 
 create view aggregate_3 as
 select COUNT(user()) as count, user_type as type
