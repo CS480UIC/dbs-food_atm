@@ -207,6 +207,82 @@
     <servlet-name>findAll</servlet-name>
     <url-pattern>/findAll</url-pattern>
   </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>simple0</display-name>
+    <servlet-name>simple0</servlet-name>
+    
+    <servlet-class>user.web.servlet.simple0</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>simple0</servlet-name>
+    <url-pattern>/simple0</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>simple1</display-name>
+    <servlet-name>simple1</servlet-name>
+    
+    <servlet-class>user.web.servlet.simple1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>simple1</servlet-name>
+    <url-pattern>/simple1</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>aggregate0</display-name>
+    <servlet-name>aggregate0</servlet-name>
+    
+    <servlet-class>user.web.servlet.aggregate0</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>aggregate0</servlet-name>
+    <url-pattern>/aggregate0</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>aggregate1</display-name>
+    <servlet-name>aggregate1</servlet-name>
+    
+    <servlet-class>user.web.servlet.aggregate1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>aggregate1</servlet-name>
+    <url-pattern>/aggregate1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>aggregate2</display-name>
+    <servlet-name>aggregate2</servlet-name>
+    
+    <servlet-class>user.web.servlet.aggregate2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>aggregate2</servlet-name>
+    <url-pattern>/aggregate2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>aggregate3</display-name>
+    <servlet-name>aggregate3</servlet-name>
+    
+    <servlet-class>user.web.servlet.aggregate3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>aggregate3</servlet-name>
+    <url-pattern>/aggregate3</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>login.jsp</welcome-file>
