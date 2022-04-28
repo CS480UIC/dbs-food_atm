@@ -39,7 +39,7 @@
  	<br><br><h3>Complex Queries:</h3>
     <a href="<c:url value='/complex0'/>" target="body">Get address for each warehouse_id</a>&nbsp;&nbsp;
     <br><a href="<c:url value='/complex1'/>" target="body">Get total quantity of food at location type 2</a>&nbsp;&nbsp;
- 	<br><a href="<c:url value='/complex2'/>" target="body">Get counts of unique restock times for warehouses</a>&nbsp;&nbsp;
+ 	<br><a href="<c:url value='/complex2'/>" target="body">id and location of atms that have a warehouse at the same location</a>&nbsp;&nbsp;
     
   </body>
 </html>

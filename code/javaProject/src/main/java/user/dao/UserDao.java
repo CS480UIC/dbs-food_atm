@@ -293,14 +293,14 @@ public class UserDao {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/food_atm", MySQL_user, MySQL_password);
-			String sql = "select COUNT(user()) as count, user_type as type from user group by user_type";
+			String sql = "SELECT atm_id, atm_location FROM atm A WHERE EXISTS (SELECT * FROM warehouse WHERE warehouse_location = A.atm_location)";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
 			ResultSet resultSet = preparestatement.executeQuery();			
 			while(resultSet.next()){
-				User user = new User();
-				user.setuser_id(resultSet.getString("count"));
-				user.setuser_type(resultSet.getString("type"));
-	    		list.add(user);
+				atm atm = new atm();
+				atm.setatm_id(resultSet.getString("atm_id"));
+				atm.setatm_location(resultSet.getString("atm_location"));
+	    		list.add(atm);
 			 }
 			connect.close();
 		} catch(SQLException e) {
