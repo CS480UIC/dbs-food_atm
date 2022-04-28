@@ -375,6 +375,42 @@
     <url-pattern>/aggregate3</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>complex0</display-name>
+    <servlet-name>complex0</servlet-name>
+    
+    <servlet-class>user.web.servlet.complex0</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>complex0</servlet-name>
+    <url-pattern>/complex0</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>complex1</display-name>
+    <servlet-name>complex1</servlet-name>
+    
+    <servlet-class>user.web.servlet.complex1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>complex1</servlet-name>
+    <url-pattern>/complex1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>complex2</display-name>
+    <servlet-name>complex2</servlet-name>
+    
+    <servlet-class>user.web.servlet.complex2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>complex2</servlet-name>
+    <url-pattern>/complex2</url-pattern>
+  </servlet-mapping>
+  
   
   
   

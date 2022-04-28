@@ -66,4 +66,19 @@ public class UserService {
 		return userDao.aggregate3();
 		
 	}
+	
+	public List<Object> complex0() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return userDao.complex0();
+		
+	}
+	
+	public List<Object> complex1() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return userDao.complex1();
+		
+	}
+	
+	public List<Object> complex2() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return userDao.complex2();
+		
+	}
 }

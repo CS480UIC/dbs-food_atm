@@ -243,5 +243,71 @@ public class UserDao {
 		return list;
 		
 	}
+	
+	public List<Object> complex0() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/food_atm", MySQL_user, MySQL_password);
+			String sql = "select location.address, warehouse.warehouse_id from location inner join warehouse on location.location_id = warehouse.warehouse_location";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				warehouse warehouse = new warehouse();
+				warehouse.setwarehouse_id(resultSet.getString("warehouse_id"));
+				warehouse.setwarehouse_location(resultSet.getString("address"));
+	    		list.add(warehouse);
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+		
+	}
+	
+	public List<Object> complex1() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/food_atm", MySQL_user, MySQL_password);
+			String sql = "select COUNT(user()) as count, user_type as type from user group by user_type";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				User user = new User();
+				user.setuser_id(resultSet.getString("count"));
+				user.setuser_type(resultSet.getString("type"));
+	    		list.add(user);
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+		
+	}
+	
+	public List<Object> complex2() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/food_atm", MySQL_user, MySQL_password);
+			String sql = "select COUNT(user()) as count, user_type as type from user group by user_type";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				User user = new User();
+				user.setuser_id(resultSet.getString("count"));
+				user.setuser_type(resultSet.getString("type"));
+	    		list.add(user);
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+		
+	}
 		
 }
