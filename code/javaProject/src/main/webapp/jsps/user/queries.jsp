@@ -22,9 +22,19 @@
   </head>
   
   <body>
-    <h1>Welcome to the Demo</h1>
-    <br>
-    <a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
+    
+    <h1>Demo Query:</h1><br>
+    <a href="<c:url value='/findAll'/>" target="body">List all the user in the table</a>&nbsp;&nbsp;
+    
+    <br><br><h3>Simple Queries:</h3>
+    <a href="<c:url value='/simple0'/>" target="body">List food with quantity > 3</a>&nbsp;&nbsp;
+    <br><a href="<c:url value='/simple1'/>" target="body">List atms that have 45 in their id</a>&nbsp;&nbsp;
+    
+    <br><br><h3>Aggregate Queries:</h3>
+    <a href="<c:url value='/aggregate0'/>" target="body">Get sum of all user balances</a>&nbsp;&nbsp;
+    <br><a href="<c:url value='/aggregate1'/>" target="body">Get sum of user balances for each member type</a>&nbsp;&nbsp;
+ 	<br><a href="<c:url value='/aggregate2'/>" target="body">Get counts of unique restock times for warehouses</a>&nbsp;&nbsp;
+    <br><a href="<c:url value='/aggregate3'/>" target="body">Get counts of users for each type</a>&nbsp;&nbsp;
  
     
   </body>

@@ -42,4 +42,28 @@ public class UserService {
 		return userDao.findall();
 		
 	}
+	public List<Object> simple0() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return userDao.simple0();
+		
+	}
+	public List<Object> simple1() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return userDao.simple1();
+		
+	}
+	public List<Object> aggregate0() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return userDao.aggregate0();
+		
+	}
+	public List<Object> aggregate1() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return userDao.aggregate1();
+		
+	}
+	public List<Object> aggregate2() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return userDao.aggregate2();
+		
+	}
+	public List<Object> aggregate3() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return userDao.aggregate3();
+		
+	}
 }

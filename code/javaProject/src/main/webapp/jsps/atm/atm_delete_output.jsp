@@ -25,7 +25,7 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/atmServletDelete'/>" method="post">
     <input type="hidden" name="method" value="delete"/>
-    <input type="hidden" name="username" value="${atm.atm_id }"/>
+    <input type="hidden" name="atm_id" value="${atm.atm_id }"/>
     atm_id :<input type="text" name="atm_id" value="${atm.atm_id }" disabled/>
     <br/>
 
