@@ -30,17 +30,10 @@ group by user_type;
 
 # complex queries
 create view complex_0 as
-select location.address, warehouse.warehouse_id
-from location
-inner join warehouse
-on location.location_id = warehouse.warehouse_location
+select location.address, warehouse.warehouse_id from location inner join warehouse on location.location_id = warehouse.warehouse_location
 
 CREATE VIEW complex_1 AS
-SELECT food_location, quantity FROM food
-WHERE 1 <=
-	(SELECT COUNT(*)
-     FROM location
-     WHERE location_type = 2);
+SELECT food_location, quantity FROM food WHERE 1 <= (SELECT COUNT(*) FROM location WHERE location_type = 2);
 
 CREATE VIEW complex_2 AS
 SELECT atm_id, atm_location FROM atm A
