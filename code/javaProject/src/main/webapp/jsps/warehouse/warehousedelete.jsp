@@ -24,7 +24,7 @@
   <h1>Delete warehouse</h1>
 <form action="<c:url value='/Entity1ServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete warehouse   :<input type="text" name="username" value="${form.warehouse_id }"/>
+	Delete warehouse   :<input type="text" name="warehouse_id" value="${form.warehouse_id }"/>
 	<span style="color: red; font-weight: 900">${errors.warehouse_id }</span>
 	<br/>
 	<input type="submit" value="Delete warehouse"/>

@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Delete Warehouse</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>Update Entity</h1>
+  <h1>Update Warehouse</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
 	warehouse_id    :<input type="integer" name="warehouse_id" value="${warehouse.warehouse_id }" disabled/>
@@ -32,7 +32,7 @@
 	<br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/warehouseServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
 				<input type="hidden" name="warehouse_id" value="${warehouse.warehouse_id }"/>
 	warehouse_location：<input type="integer" name="warehouse_location" value="${form.warehouse_location }"/>

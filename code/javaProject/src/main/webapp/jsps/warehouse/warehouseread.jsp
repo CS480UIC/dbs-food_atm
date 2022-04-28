@@ -23,7 +23,7 @@
   <body>
   <h1>Read warehouse</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletRead'/>" method="post">
+<form action="<c:url value='/warehouseServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
 	warehouse_id    :<input type="text" name="warehouse_id" value="${form.warehouse_id }"/>
 	<span style="color: red; font-weight: 900">${errors.warehouse_id }</span>

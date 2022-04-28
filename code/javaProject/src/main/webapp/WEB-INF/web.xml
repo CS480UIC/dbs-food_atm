@@ -50,6 +50,53 @@
   </servlet-mapping>
   
   
+  <servlet>
+    <description></description>
+    <display-name>warehouseServletCreate</display-name>
+    <servlet-name>warehouseServletCreate</servlet-name>
+    <servlet-class>warehouse.web.servlet.warehouseServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>warehouseServletCreate</servlet-name>
+    <url-pattern>/warehouseServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>warehouseServletRead</display-name>
+    <servlet-name>warehouseServletRead</servlet-name>
+    <servlet-class>warehouse.web.servlet.warehouseServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>warehouseServletRead</servlet-name>
+    <url-pattern>/warehouseServletRead</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+    <servlet>
+    <description></description>
+    <display-name>warehouseServletUpdate</display-name>
+    <servlet-name>warehouseServletUpdate</servlet-name>
+    <servlet-class>warehouse.web.servlet.warehouseServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>warehouseServletUpdate</servlet-name>
+    <url-pattern>/warehouseServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <description></description>
+    <display-name>warehouseServletDelete</display-name>
+    <servlet-name>warehouseServletDelete</servlet-name>
+    <servlet-class>warehouse.web.servlet.warehouseServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>warehouseServletDelete</servlet-name> 
+    <url-pattern>/warehouseServletDelete</url-pattern>
+  </servlet-mapping>
+  
   
   
   <servlet>

@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Entity1 Create</title>
+    <title>Warehouse Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -22,7 +22,7 @@
   
   <body>
   <h1>warehouse Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+<form action="<c:url value='/warehouseServletCreate'/>" method="post">
 	warehouse_id    :<input type="integer" name="warehouse_id" value="${form.warehouse_id }"/>
 	<span style="color: red; font-weight: 900">${errors.warehouse_id }</span>
 	<br/>

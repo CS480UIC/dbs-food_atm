@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read Entity Output</title>
+    <title>Read Warehouse Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
+  <h1>Read Warehouse Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
 	warehouse_id    :<input type="text" name="warehouse_id" value="${warehouse.warehouse_id }" disabled/>
