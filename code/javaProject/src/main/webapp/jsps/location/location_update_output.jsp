@@ -28,7 +28,7 @@
     <br/>
     location_type：<input type="text" name="location_type" value="${location.location_type }" disabled/>
     <br/>
-    location_address ：<input type="datetime" name="location_address" value="${location.location_address }" disabled/>
+    address ：<input type="text" name="address" value="${location.address }" disabled/>
     <br/>
 </form>
 <h1>Update the values below</h1>
@@ -38,7 +38,7 @@
     location_type：<input type="integer" name="location_type" value="${form.location_type }"/>
     <span style="color: red; font-weight: 900">${errors.location_type }</span>
     <br/>
-    location_address ：<input type="datetime" name="location_address" value="${form.location_address }"/>
+    address ：<input type="text" name="address" value="${form.address}"/>
     <span style="color: red; font-weight: 900">${errors.location_address }</span>
     <br/>
     <input type="submit" value="Update location"/>

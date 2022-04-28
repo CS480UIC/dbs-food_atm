@@ -24,11 +24,11 @@
   <h1>Read location Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	location_id    :<input type="text" name="location_id" value="${location.location_id }" disabled/>
+	location_id:<input type="text" name="location_id" value="${location.location_id }" disabled/>
 	<br/>
 	location_type：<input type="text" name="location_type" value="${location.location_type }" disabled/>
 	<br/>
-	location_address	：<input type="text" name="location_address" value="${location.location_address }" disabled/>
+	address：<input type="text" name="address" value="${location.address }" disabled/>
 	<br/>
 
 </form>

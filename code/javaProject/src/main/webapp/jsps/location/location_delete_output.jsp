@@ -30,7 +30,7 @@
     <br/>
     location_type：<input type="text" name="location_type" value="${location.location_type }" disabled/>
     <br/>
-    location_address ：<input type="text" name="location_address" value="${location.location_address }" disabled/>
+    address ：<input type="text" name="address" value="${location.address }" disabled/>
     <br/>
     <input type="submit" value="Delete location"/>
 </form>

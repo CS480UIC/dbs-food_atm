@@ -23,10 +23,10 @@
   <body>
   <h1>location Create</h1>
 <form action="<c:url value='/locationServletCreate'/>" method="post">
-	location_id    :<input type="integer" name="location_id" value="${form.location_id }"/>
+	location_id    :<input type="text" name="location_id" value="${form.location_id }"/>
 	<span style="color: red; font-weight: 900">${errors.location_id }</span>
 	<br/>
-	location_type：<input type="integer" name="location_type" value="${form.location_type }"/>
+	location_type：<input type="text" name="location_type" value="${form.location_type }"/>
 	<span style="color: red; font-weight: 900">${errors.location_type }</span>
 	<br/>
 	location_address	：<input type="text" name="location_address" value="${form.location_address }"/>

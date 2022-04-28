@@ -28,12 +28,7 @@
 	location_id    :<input type="text" name="location_id" value="${form.location_id }"/>
 	<span style="color: red; font-weight: 900">${errors.location_id }</span>
 	<br/>
-<%-- 	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
-	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/> --%>
+
 	<input type="submit" value="Read location"/>
 </form>
   </body>
