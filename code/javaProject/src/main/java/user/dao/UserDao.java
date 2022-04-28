@@ -277,7 +277,7 @@ public class UserDao {
 			while(resultSet.next()){
 				food food = new food();
 				food.setfood_location(resultSet.getString("food_location"));
-				food.setquantity(resultSet.getString("quantity"));
+				food.setname(resultSet.getString("quantity"));
 	    		list.add(food);
 			 }
 			connect.close();

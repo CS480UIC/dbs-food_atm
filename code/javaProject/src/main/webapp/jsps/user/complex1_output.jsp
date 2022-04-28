@@ -18,7 +18,7 @@
 <c:forEach items="${UserList}" var="food">
 	<tr>
 		<td>${food.food_location}</td>
-		<td>${food.quanity}</td>
+		<td>${food.name}</td>
 
 </c:forEach>
 </table>
