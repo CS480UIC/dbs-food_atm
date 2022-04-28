@@ -271,14 +271,14 @@ public class UserDao {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/food_atm", MySQL_user, MySQL_password);
-			String sql = "select COUNT(user()) as count, user_type as type from user group by user_type";
+			String sql = "SELECT food_location, quantity FROM food WHERE 1 <= (SELECT COUNT(*) FROM location WHERE location_type = 2)";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
 			ResultSet resultSet = preparestatement.executeQuery();			
 			while(resultSet.next()){
-				User user = new User();
-				user.setuser_id(resultSet.getString("count"));
-				user.setuser_type(resultSet.getString("type"));
-	    		list.add(user);
+				food food = new food();
+				food.setfood_location(resultSet.getString("food_location"));
+				food.setquantity(resultSet.getString("quantity"));
+	    		list.add(food);
 			 }
 			connect.close();
 		} catch(SQLException e) {
