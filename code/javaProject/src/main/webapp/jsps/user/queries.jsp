@@ -35,7 +35,11 @@
     <br><a href="<c:url value='/aggregate1'/>" target="body">Get sum of user balances for each member type</a>&nbsp;&nbsp;
  	<br><a href="<c:url value='/aggregate2'/>" target="body">Get counts of unique restock times for warehouses</a>&nbsp;&nbsp;
     <br><a href="<c:url value='/aggregate3'/>" target="body">Get counts of users for each type</a>&nbsp;&nbsp;
- 
+ 	
+ 	<br><br><h3>Complex Queries:</h3>
+    <a href="<c:url value='/complex0'/>" target="body">Get address for each warehouse_id</a>&nbsp;&nbsp;
+    <br><a href="<c:url value='/complex1'/>" target="body">Get total quantity of food at location type 2</a>&nbsp;&nbsp;
+ 	<br><a href="<c:url value='/complex2'/>" target="body">Get counts of unique restock times for warehouses</a>&nbsp;&nbsp;
     
   </body>
 </html>
