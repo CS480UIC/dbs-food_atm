@@ -52,6 +52,54 @@
   
   <servlet>
     <description></description>
+    <display-name>locationServletCreate</display-name>
+    <servlet-name>locationServletCreate</servlet-name>
+    <servlet-class>location.web.servlet.locationServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>locationServletCreate</servlet-name>
+    <url-pattern>/locationServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>locationServletRead</display-name>
+    <servlet-name>locationServletRead</servlet-name>
+    <servlet-class>location.web.servlet.locationServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>locationServletRead</servlet-name>
+    <url-pattern>/locationServletRead</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+    <servlet>
+    <description></description>
+    <display-name>locationServletUpdate</display-name>
+    <servlet-name>locationServletUpdate</servlet-name>
+    <servlet-class>location.web.servlet.locationServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>locationServletUpdate</servlet-name>
+    <url-pattern>/locationServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <description></description>
+    <display-name>locationServletDelete</display-name>
+    <servlet-name>locationServletDelete</servlet-name>
+    <servlet-class>location.web.servlet.locationServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>locationServletDelete</servlet-name> 
+    <url-pattern>/locationServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
     <display-name>warehouseServletCreate</display-name>
     <servlet-name>warehouseServletCreate</servlet-name>
     <servlet-class>warehouse.web.servlet.warehouseServletCreate</servlet-class>

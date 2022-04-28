@@ -22,7 +22,7 @@
   
   <body>
   <h1>location Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+<form action="<c:url value='/locationServletCreate'/>" method="post">
 	location_id    :<input type="integer" name="location_id" value="${form.location_id }"/>
 	<span style="color: red; font-weight: 900">${errors.location_id }</span>
 	<br/>

@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
+  <h1>Read location Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
 	location_id    :<input type="text" name="location_id" value="${location.location_id }" disabled/>

@@ -22,7 +22,7 @@
   
   <body>
   <h1>Delete location</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/locationServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Delete location   :<input type="integer" name="location_id" value="${form.location_id }"/>
 	<span style="color: red; font-weight: 900">${errors.location_id }</span>

@@ -21,11 +21,11 @@
 </head>
 
 <body>
-<h1>Delete Entity</h1>
+<h1>Delete Location</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/locationServletDelete'/>" method="post">
     <input type="hidden" name="method" value="delete"/>
-    <input type="hidden" name="username" value="${location.location_id }"/>
+    <input type="hidden" name="location_id" value="${location.location_id }"/>
     location_id :<input type="text" name="location_id" value="${location.location_id }" disabled/>
     <br/>
     location_type：<input type="text" name="location_type" value="${location.location_type }" disabled/>

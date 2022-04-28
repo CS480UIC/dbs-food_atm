@@ -21,7 +21,7 @@
 </head>
 
 <body>
-<h1>Update Entity</h1>
+<h1>Update Location</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
     location_id :<input type="integer" name="location_id" value="${location.location_id }" disabled/>
@@ -32,7 +32,7 @@
     <br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/locationServletUpdate'/>" method="post">
     <input type="hidden" name="method" value="update"/>
     <input type="hidden" name="location_id" value="${location.location_id }"/>
     location_type：<input type="integer" name="location_type" value="${form.location_type }"/>
