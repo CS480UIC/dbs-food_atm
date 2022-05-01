@@ -5,16 +5,11 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import org.apache.ibatis.jdbc.ScriptRunner;
 
-import user.domain.User;
+
 
 
 
@@ -45,7 +40,7 @@ public class InitDao {
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/food_atm", MySQL_user, MySQL_password);
 			
 			 //Initialize the script runner
-	   		 ScriptRunner sr = new ScriptRunner(connect);
+	   		 	ScriptRunner sr = new ScriptRunner(connect);
 	   		 //Creating a reader object
 	   		 Reader reader = new InputStreamReader(input);
 	   		 //Running the script
